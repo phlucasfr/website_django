@@ -4,4 +4,4 @@
 
  > Status: Desenvolvendo ⚠️
 
-## Projeto de website com recuros Django.
+## Projeto de website com recursos Django.
