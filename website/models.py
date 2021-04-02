@@ -15,12 +15,15 @@ class Post(models.Model):
         choices=Categorias.choices,
         default=Categorias.GR,
     )
-    deleted = models.BooleanField(default=True)
+    deleted = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
 
     def full_name(self):
         return self.title + self.sub_title
+
+    def get_category_label(self):
+        return self.get_categories_display()
 
     full_name.admin_order_field = 'title'

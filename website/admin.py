@@ -7,8 +7,8 @@ class PostAdmin(admin.ModelAdmin):
 
     # fields = ['title', 'sub_title']
 
-    def get_queryset(self, request):
-        return Post.objects.filter(deleted=True)
+    #def get_queryset(self, request):
+        #return Post.objects.filter(deleted=False)
 
 admin.site.register(Post, PostAdmin)
 
